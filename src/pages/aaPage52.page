@@ -1,0 +1,23 @@
+<apex:page controller="aaPage52">
+    <apex:form id="RID">
+
+     
+    <apex:commandlink value="click" action="{!TestX2}" rerender=" results">
+    <apex:param assignTo="{!X2}" value="5" />
+    </apex:commandlink>
+   <apex:outputText value="{!X2}"/><br/>
+     
+    </apex:form>
+    
+    <apex:outputPanel layout="block" id="results">
+   
+          
+    <apex:pageBlock title="Job Detail" >
+        <apex:pageBlockSection title="Information" collapsible="false" columns="1">
+
+            <apex:outputText value="{!X2}"/><br/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+  
+    </apex:outputPanel>
+    </apex:page>
